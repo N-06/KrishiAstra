@@ -1,0 +1,28 @@
+- proper access to/generation of data, we have to interact with the agencies(who gave the problem statements) for these (overcome data complexities and curation)
+- give reference to the data sources as well, including the agencies you reached out to
+- don't through complex terms into the proposed solution too early (so don't include any tech in the first two slides)
+- don't dump all the tech you're using, place the ones being implemented in a strategized approach, in a hierarchal manner, tech stack- workflows in LHS of slide, highlight the tech stack on the RHS.
+- feasibility analysis, proposal shouldn't be over-ambitious, whether it can be built or not (will our solution offer feasibility to the existing problem- understand the gravity of the problem and tie it to a technology that's feasible, for ex.: don't implement a complex tech for a simple solution)
+- promote your product: how to derive business out of a solution (ex: WhatsApp), and how the solution impacts society and the living standards of individuals, who'll use our solution and how will it benefit them
+- references (articulate that you've referred to them, researched and come up with implementations to your solutions, showing how much time and effort you've spent, and highlight how your research identified the gaps too)
+- don't use AI to generate slides
+
+
+- who are the actors/stakeholders in the project and what are their interactions, how do they get realised (implementations) => USE CASE DIAGRAM
+
+- what is the existing solutions and what are it's limitations, how can we overcome it (extending it into a scalable reliable sol) => Proposal "WHAT" (not only technical, we need to focus on the Analysis phase)
+
+- Next, design phase => "HOW" (propose an architecture, how it's being realised, don't elaborate on tech in this either, highlight the architecture/architectural tweak instead, our novelty must be manifested here)(elaborate the arch and algo)(changes: use case => methodology => arch => algo)
+
+
+Slide 1: introductions
+
+Slide 2: problem and it's challenges ("what") AND proposing the new methodology, "how" ques
+
+Slide 3: workflows, including arch/arch workflow, in LHS of slide, highlight the tech stack on the RHS
+
+Slide 4: feasibility analysis, viability analysis, risk analysis and mitigation
+
+Slide 5: impact and benefits
+
+Slide 6: references

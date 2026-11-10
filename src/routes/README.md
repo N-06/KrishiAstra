@@ -1,21 +1,33 @@
-# Routes
+# KrishiAstra
 
-TanStack Start uses **file-based routing**. Every `.tsx` file in this directory
-defines a route. Do **not** create `src/pages/`, `src/routes/_app/index.tsx`, or
-`app/layout.tsx` — those are Next.js / Remix conventions. The only root layout
-is `src/routes/__root.tsx`.
+KrishiAstra is a farm-to-market web app prototype. We built it to explore how farmers can compare local market prices, decide whether to sell or store their harvest, and find buyers.
 
-## Conventions
+## Features
 
-| File | URL |
-| --- | --- |
-| `index.tsx` | `/` |
-| `about.tsx` | `/about` |
-| `users/index.tsx` | `/users` |
-| `users/$id.tsx` | `/users/:id` (dynamic — bare `$`, no curly braces) |
-| `posts/{-$category}.tsx` | `/posts/:category?` (optional segment) |
-| `files/$.tsx` | `/files/*` (splat — read via `_splat` param, never `*`) |
-| `_layout.tsx` | layout route (renders children via `<Outlet />`) |
-| `__root.tsx` | app shell — wraps every page; preserve `<Outlet />` |
+- **Farmer dashboard:** View crop plans, farm advisories, and estimated profit.
+- **Market prices:** Browse sample mandi prices and buyer listings.
+- **Sell vs. store:** Compare selling now with storing for 30, 60, or 90 days. The calculator accounts for storage costs and spoilage.
+- **Buyer dashboard:** Browse farmer listings and send purchase inquiries.
 
-`routeTree.gen.ts` is auto-generated. Don't edit it by hand.
+## Tech stack
+
+React, TypeScript, TanStack Start, Vite, Tailwind CSS, and Recharts. The app serves its own `/api` routes and uses a local JSON file for storage.
+
+## Run locally
+
+npm install
+npm run dev
+
+Open `http://localhost:8080` or the URL printed in the terminal.
+
+## Project structure
+
+- `src/routes/index.tsx` — Main page and dashboard navigation
+- `src/components/views/` — Farmer and buyer dashboard screens
+- `src/lib/api-client.ts` — Frontend requests to the API
+- `src/server/api-handler.ts` — API routes
+- `src/server/db.json` — Sample data and local storage
+
+## Prototype limits
+
+Market prices come from sample data, and the sell-vs-store calculator uses preset future prices.
